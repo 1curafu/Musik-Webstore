@@ -63,10 +63,20 @@ body {
     font-size: 15px
 }
 
+
+
 .btn1 a {
     color: #aeaeae;
     text-decoration: none;
 }
+
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
 .text span {
     font-size: 13px;
@@ -82,12 +92,4 @@ hr .new1 {
     border: 1px solid
 }
 
-.join {
-    font-size: 14px;
-    color: #a0a0a0;
-    font-weight: bold
-}
 
-.date {
-    background-color: #ccc
-}
