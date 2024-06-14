@@ -290,3 +290,8 @@ body {
     background: #007bff;
     cursor: pointer;
 }
+
+.shopping-cart {
+    width: 36px;
+    height: 36px;
+}
