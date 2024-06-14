@@ -120,18 +120,7 @@ body {
     margin-left: 1rem;
 }
 
-.song-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.song-actions {
-    display: flex;
-    gap: 1rem;
-}
-
-.demo-button, .cart-button {
+.cart-button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
@@ -223,4 +212,81 @@ body {
 
 .cartbutton:hover{
     color:lightskyblue;
+}
+
+
+/* Stil für den gesamten Bereich über Song Actions */
+.song-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Stil für den Audio-Player-Bereich */
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Stil für Play/Pause-Button */
+.play-pause {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.play-pause:hover {
+    background-color: #0056b3;
+}
+
+/* Stil für die Seek-Bar */
+.seek-bar {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seek-bar:hover {
+    opacity: 1;
+}
+
+/* Stil für die Zeitangaben */
+.current-time, .duration {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Zusätzlicher Stil für spezifische Anpassungen */
+/* Beispiel: Ändern der Farbe des Ladebalkens */
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+.seek-bar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
 }
