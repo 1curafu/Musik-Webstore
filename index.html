@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BWTunes</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const demoSound = document.getElementById('demoSound');
+            const playPauseButton = document.querySelector('.play-pause');
+            const seekBar = document.querySelector('.seek-bar');
+            const currentTime = document.querySelector('.current-time');
+            const duration = document.querySelector('.duration');
+
+            playPauseButton.addEventListener('click', () => {
+                if (demoSound.paused) {
+                    demoSound.play();
+                    playPauseButton.textContent = 'Pause';
+                } else {
+                    demoSound.pause();
+                    playPauseButton.textContent = 'Play';
+                }
+            });
+
+            seekBar.addEventListener('input', () => {
+                const seekTime = demoSound.duration * (seekBar.value / 100);
+                demoSound.currentTime = seekTime;
+            });
+
+            demoSound.addEventListener('loadedmetadata', () => {
+                duration.textContent = formatTime(demoSound.duration);
+            });
+
+            demoSound.addEventListener('timeupdate', () => {
+                seekBar.value = (demoSound.currentTime / demoSound.duration) * 100;
+                currentTime.textContent = formatTime(demoSound.currentTime);
+            });
+
+            function formatTime(time) {
+                const minutes = Math.floor(time / 60);
+                const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+                return `${minutes}:${seconds}`;
+            }
+        });
+    </script>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-left">
@@ -16,7 +56,7 @@
         </div>
         <div class="navbar-right">
             <div class="notifications">
-                <a class="cartbutton" href="#" ><object class="shopping-cart" data="/images/shopping-cart.svg" type="image/svg+xml"></object></a>
+                <a class="cartbutton" href="/pages/shopping-cart.html" ><object class="shopping-cart" data="/images/shopping-cart.svg" type="image/svg+xml"></object></a>
                 <span class="notification-count">3</span>
             </div>
             <div class="account">
@@ -32,13 +72,21 @@
             <div class="song-cover">
                 <img src="images/chinesedog.jpg" alt="Song Cover" class="cover-image">
             </div>
-            <div class="song-info">
-                <h1 class="song-title">BWZ Song</h1>
-                <div class="song-actions">
-                    <button class="demo-button">Demo Sound</button>
-                    <button class="cart-button">Add to Cart</button>
-                </div>                
+                <div class="song-info">
+                    <h1 class="song-title">BWZ Song</h1>
+                    <div class="song-actions">
+                        <div class="audio-player">
+                            <button class="play-pause">Play</button>
+                            <audio id="demoSound" src="/music/urphonelinging.mp3" preload="metadata"></audio>
+                            <input type="range" class="seek-bar" value="0" min="0" max="100">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">0:00</span>
+                        </div>
+                        <button class="cart-button">Add to Cart</button>
+                    </div>
+                </div>
             </div>
+    
         </div>
         
         <!-- Song Details -->
@@ -76,5 +124,7 @@
         <a href="pages/impressum.html" target="_blank">Impressum</a>
         <p>© Copyright BWTunes 2024</p>
     </footer>
+
+
 </body>
 </html>
