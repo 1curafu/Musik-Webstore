@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BWTunes - Shopping Cart</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <title>Shopping Cart - BWTunes</title>
     <link rel="stylesheet" href="/styles/shopping-cart.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <nav class="navbar"> 
-        </nav>
-
-    <main class="main-content">  
-        <h1>Shopping Cart</h1>
-
-        <section class="cart-items">
-            <h2>Your Songs</h2>
-            <div class="song-grid">
-                </div>
-        </section>
-
-        <section class="checkout-summary">
-            <h2>Order Summary</h2>
-            <div class="summary-details">
-                <p>Subtotal: <span id="subtotal">$0.00</span></p>
-                <p>Taxes: <span id="taxes">$0.00</span></p>
-                <p>Total: <span id="total">$0.00</span></p>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="../index.html"><img src="../images/BWTunes Logo.png" alt="BWTunes Logo" class="logo"></a>
+        </div>
+        <div class="navbar-right">
+            <div class="notifications">
+                <a class="cartbutton" href="../pages/shopping-cart.html">
+                    <img src="../images/shopping-cart.svg" alt="Shopping Cart" class="shopping-cart">
+                </a>
+                <span class="notification-count">0</span>
             </div>
-            <button class="checkout-button">Proceed to Checkout</button>
-        </section>
+            <div class="account">
+                <a href="/pages/profile.html">My Account</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <div class="cart-items">
+            <h2>Items in Your Cart</h2>
+            <div class="song-grid"></div>
+        </div>
+        <div class="checkout-summary">
+            <h2>Summary</h2>
+            <div class="summary-details">
+                <p>Total Items: <span class="total-items">0</span></p>
+                <p>Total Price: $<span class="total-price">0.00</span></p>
+            </div>
+            <button class="checkout-button">Checkout</button>
+            <button id="clear-cart" class="clear-cart-button">Clear Cart</button>
+        </div>        
+        
     </main>
-
+    
     <footer class="footer">
-        </footer>
+        <a href="../pages/impressum.html" target="_blank">Impressum</a>
+        <p>© Copyright BWTunes 2024</p>
+    </footer>
 
-    <script src="/scripts/script.js"></script> 
-    <script src="/scripts/database.js"></script>
+    <script src="/scripts/cart.js"></script>
+
 </body>
 </html>

@@ -1,42 +1,37 @@
-/* shopping-cart.css */
-
-/* Main Content Area */
+/* Existing styles */
 .main-content {
-    padding: 20px; /* Add some padding for visual comfort */
+    padding: 20px;
 }
 
-/* Shopping Cart Section */
 .cart-items h2 {
     margin-bottom: 15px;
 }
 
-.song-grid { /* Adjust based on your existing song-grid styles */
+.song-grid { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.song-item { /* Adjust based on your existing song-item styles */
+.song-item { 
     border: 1px solid #ddd;
     padding: 15px;
     text-align: center;
 }
 
-/* Add styles for quantity input and remove button */
 .song-item .quantity {
     width: 50px;
     margin-right: 10px;
 }
 
 .song-item .remove-button {
-    background-color: #f00; /* Red background for remove button */
+    background-color: #f00;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
 
-/* Checkout Summary Section */
 .checkout-summary {
     margin-top: 30px;
     border: 1px solid #ddd;
@@ -52,10 +47,26 @@
 }
 
 .checkout-button {
-    background-color: #007bff; /* Blue background for checkout button */
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 15px;
+}
+
+
+.clear-cart-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.clear-cart-button:hover {
+    background-color: #ff7f50;
 }

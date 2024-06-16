@@ -215,7 +215,7 @@ body {
 }
 
 
-/* Stil für den gesamten Bereich über Song Actions */
+
 .song-actions {
     display: flex;
     justify-content: space-between;
@@ -226,14 +226,14 @@ body {
     margin-top: 20px;
 }
 
-/* Stil für den Audio-Player-Bereich */
+
 .audio-player {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Stil für Play/Pause-Button */
+
 .play-pause {
     padding: 10px 20px;
     background-color: #007bff;
@@ -248,7 +248,7 @@ body {
     background-color: #0056b3;
 }
 
-/* Stil für die Seek-Bar */
+
 .seek-bar {
     -webkit-appearance: none;
     width: 100%;
@@ -265,14 +265,13 @@ body {
     opacity: 1;
 }
 
-/* Stil für die Zeitangaben */
+
 .current-time, .duration {
     font-size: 14px;
     color: #333;
 }
 
-/* Zusätzlicher Stil für spezifische Anpassungen */
-/* Beispiel: Ändern der Farbe des Ladebalkens */
+
 .seek-bar::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -294,4 +293,19 @@ body {
 .shopping-cart {
     width: 36px;
     height: 36px;
+}
+
+.notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    transition: transform 0.3s ease-in-out;
+}
+.notification-count.bump {
+    transform: scale(1.3);
 }
