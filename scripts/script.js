@@ -1,10 +1,10 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const demoSound = document.getElementById('demoSound');
     const playPauseButton = document.querySelector('.play-pause');
     const seekBar = document.querySelector('.seek-bar');
     const currentTime = document.querySelector('.current-time');
     const duration = document.querySelector('.duration');
+    const navbarAvatar = document.getElementById('navbar-avatar');
 
     playPauseButton.addEventListener('click', () => {
         if (demoSound.paused) {
@@ -75,4 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     updateCartNotification();
+
+    // Load and set profile avatar
+    const savedProfile = JSON.parse(localStorage.getItem('profile'));
+    if (savedProfile && savedProfile.avatar) {
+        navbarAvatar.src = savedProfile.avatar;
+    }
 });

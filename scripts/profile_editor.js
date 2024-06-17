@@ -53,3 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const profile = JSON.parse(localStorage.getItem('profile'));
+    if (profile && profile.avatar) {
+        document.getElementById('profile-avatar').src = profile.avatar;
+    }
+});
