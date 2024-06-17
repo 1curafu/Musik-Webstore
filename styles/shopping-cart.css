@@ -47,18 +47,24 @@
 }
 
 .checkout-button {
-    background-color: #007bff;
-    color: white;
+    background-color: #0056b3; /* Darker blue for better contrast */
+    color: #ffffff; /* White text */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.checkout-button:hover {
+    background-color: #004494; /* Even darker blue on hover for consistency */
 }
 
 
 .clear-cart-button {
-    background-color: #ff6347;
-    color: white;
+    background-color: #d32f2f; /* A darker red for better contrast */
+    color: #ffffff; /* White text for high contrast */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -68,5 +74,20 @@
 }
 
 .clear-cart-button:hover {
-    background-color: #ff7f50;
+    background-color: #b71c1c; /* An even darker shade of red on hover for consistency */
+}
+
+.notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    transition: transform 0.3s ease-in-out;
+}
+.notification-count.bump {
+    transform: scale(1.3);
 }
