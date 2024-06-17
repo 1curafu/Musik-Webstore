@@ -1,13 +1,12 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     function loadCart() {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        return cart;
+        return JSON.parse(localStorage.getItem('cart')) || [];
     }
 
     function clearCart() {
         localStorage.removeItem('cart');
         updateCartUI();
+        updateCartNotification();
     }
 
     function updateCartUI() {
@@ -39,8 +38,24 @@ document.addEventListener('DOMContentLoaded', function() {
         totalPriceElement.textContent = totalPrice.toFixed(2);
     }
 
+    function updateCartNotification() {
+        const cart = loadCart();
+        document.querySelector('.notification-count').textContent = cart.length;
+    }
+
     document.getElementById('clear-cart').addEventListener('click', clearCart);
 
     updateCartUI();
+    updateCartNotification();
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const checkoutButton = document.getElementById('checkout-button');
+
+    checkoutButton.addEventListener('click', function() {
+        // Perform checkout actions here
+        // For example, redirect to a payment page
+        window.location.href = '/pages/checkout.html'; // Redirect to checkout page
+    });
+});
