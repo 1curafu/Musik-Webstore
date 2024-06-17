@@ -315,3 +315,9 @@ body {
 .notification-count.bump {
     transform: scale(1.3);
 }
+
+#navbar-avatar {
+    height: 40px; /* Smaller size */
+    width: 40px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Round frame */
+}
