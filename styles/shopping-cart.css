@@ -91,3 +91,32 @@
 .notification-count.bump {
     transform: scale(1.3);
 }
+
+.checkout-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed; 
+}
+
+.song-item h3, .song-item .price {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+
+.song-item img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+
+.song-item .song-name, .song-item .song-price {
+    font-size: 1rem;
+}
+
+.song-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
