@@ -54,8 +54,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkoutButton = document.getElementById('checkout-button');
 
     checkoutButton.addEventListener('click', function() {
-        // Perform checkout actions here
-        // For example, redirect to a payment page
-        window.location.href = '/pages/checkout.html'; // Redirect to checkout page
+        window.location.href = '/pages/checkout.html';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const checkoutButton = document.getElementById('checkout-button');
+    const totalItems = document.querySelector('.total-items');
+
+    function updateCheckoutButtonStatus() {
+        // Disable the checkout button if total items is 0
+        checkoutButton.disabled = parseInt(totalItems.textContent, 10) === 0;
+    }
+
+    updateCheckoutButtonStatus();
+
+
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const clearCartButton = document.getElementById('clear-cart');
+    clearCartButton.addEventListener('click', () => {
+        localStorage.removeItem('cart');
+        window.location.reload();
     });
 });
