@@ -12,6 +12,9 @@ body {
     justify-content: space-between;
     padding: 1.5rem;
     align-items: center;
+    position: sticky;
+    z-index: 1000;
+    top:0;
 }
 
 .navbar-left {
@@ -23,6 +26,10 @@ body {
     height: 80px;
     width: 80px;
     transition: 0.9s;
+    padding-left: 1rem;    /* would add this for style but we would have to fix the issue with the picture placement. the logo background shows that the box is bigger than the picture itself.
+    border-radius: 4px;
+    background-color: black;
+    */
 }
 
 .logo:hover {
