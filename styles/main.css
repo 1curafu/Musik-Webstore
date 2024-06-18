@@ -189,6 +189,9 @@ body {
     text-align: center;
     transition: 0.9s;
 }
+.song-item p {
+    margin-top: 2px;
+}
 
 .song-item:hover {
     transform: scale(1.1);
