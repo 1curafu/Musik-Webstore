@@ -12,16 +12,22 @@
     <nav class="navbar">
         <div class="navbar-left">
             <a href="../index.html"><img src="../images/BWTunes Logo.png" alt="BWTunes Logo" class="logo"></a>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="🔍︎  Search Songs" class="search-bar">
+                <div id="search-results" class="search-results"></div>
+            </div>
         </div>
         <div class="navbar-right">
             <div class="notifications">
                 <a class="cartbutton" href="../pages/shopping-cart.html">
                     <img src="../images/shopping-cart.svg" alt="Shopping Cart" class="shopping-cart">
+                    <span class="notification-count">0</span>
                 </a>
-                <span class="notification-count">0</span>
             </div>
             <div class="account">
-                <a href="/pages/profile.html">My Account</a>
+                <a href="/pages/profile.html">
+                    <img id="navbar-avatar" src="/images/default-avatar.png" alt="Profile Avatar" class="avatar">
+                </a>
             </div>
         </div>
     </nav>
@@ -40,7 +46,6 @@
             <button id="checkout-button" class="checkout-button">Checkout</button>
             <button id="clear-cart" class="clear-cart-button">Clear Cart</button>
         </div>        
-        
     </main>
     
     <footer class="footer">
@@ -49,6 +54,7 @@
     </footer>
 
     <script src="/scripts/cart.js"></script>
-
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/search.js"></script>
 </body>
 </html>
