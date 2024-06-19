@@ -187,6 +187,8 @@ body {
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
+    background-color: #34c759;
+    transition: 0.9s;
 }
 
 .demo-button {
@@ -196,11 +198,6 @@ body {
 
 .demo-button:hover {
     transform: scale(1.2);
-}
-
-.cart-button {
-    background-color: #34c759;
-    transition: 0.9s;
 }
 
 .cart-button:hover {
@@ -214,11 +211,14 @@ body {
     border-radius: 8px;
     padding: 1rem;
     margin-top: 1rem;
+    font-family: sans-serif;
+    line-height: 1.6;
 }
 
 .song-details h2 {
     font-size: 20px;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .similar-songs {
@@ -375,79 +375,66 @@ body {
 }
 
 #navbar-avatar {
-    height: 40px; /* Smaller size */
-    width: 40px; /* Maintain aspect ratio */
-    border-radius: 50%; /* Round frame */
-}
-
-.song-details {
-    /* Add your preferred styling here */
-    font-family: sans-serif;
-    line-height: 1.6;
-}
-
-.song-details h2 {
-    /* Style the song title */
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    height: 40px;
+    width: 40px; 
+    border-radius: 50%;
 }
 
 .song-details h3 {
-    /* Style the key themes heading */
     font-size: 1.4rem;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .song-title .emoji {
-    font-size: 2rem; /* Make the emoji larger */
+    font-size: 2rem;
 }
 
 .intro-text .highlight {
-    font-weight: bold; /* Make certain words bold for emphasis */
+    font-weight: bold;
 }
 
 .dog-key-themes li {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     margin-bottom: 0.5rem;
 }
 
 .panda-key-themes li {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     margin-bottom: 0.5rem;
 }
 
 .penguin-key-themes li {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     margin-bottom: 0.5rem;
 }
 
 .duck-key-themes li {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     margin-bottom: 0.5rem;
 }
 
 .bear-key-themes li {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     margin-bottom: 0.5rem;
 }
 
 .dog-key-themes li::before {
-    content: "🐾 "; /* Add a paw print before each list item */
+    content: "🐾 ";
 }
 
 .penguin-key-themes li::before {
-    content: "🐧 "; /* Add a penguin emoji before each list item */
+    content: "🐧 ";
 }
 
 .panda-key-themes li::before {
-    content: "🐼 "; /* Add a panda emoji before each list item */
+    content: "🐼 ";
 }
 
 .duck-key-themes li::before {
-    content: "🦆 "; /* Add a duck emoji before each list item */
+    content: "🦆 ";
 }
 
 .bear-key-themes li::before {
-    content: "🐻 "; /* Add a bear emoji before each list item */
+    content: "🐻 ";
 }
