@@ -1,6 +1,6 @@
 # Team Projekt IMST23A
 
-Welcome to the Team Projekt IMST23A repository. This project is a collaborative school assignment aimed at achieving [briefly describe the main objective of the project].
+Welcome to the Team Projekt IMST23A repository. This project is a collaborative school assignment aimed at achieving knowledge of programming HTML, CSS and JavaScript.
 
 ## Table of Contents
 
