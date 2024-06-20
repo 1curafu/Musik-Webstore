@@ -5,7 +5,6 @@ Welcome to the Team Projekt IMST23A repository. This project is a collaborative 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -13,15 +12,11 @@ Welcome to the Team Projekt IMST23A repository. This project is a collaborative 
 - [Contact](#contact)
 
 ## Introduction
-
-[Provide a brief introduction about the project, its purpose, and what problem it solves.]
-
-## Features
-
-- Feature 1: [Description of feature 1]
-- Feature 2: [Description of feature 2]
-- Feature 3: [Description of feature 3]
-- ...
+Projektbeschreibung
+●	Projektname: BWTunes
+●	Projektart: Die Page ist ein Music Store basierend auf dem Design von dem Itunes Store
+●	Zielgruppe: Leute, die zuverlässig exklusive Musik hören wollen 
+●	Ziele: Das Ziel dieses Projekts ist es einen tieferen Einblick in die Welt des Programmierens zu erhalten und so einen beeindruckenden Webauftritt zu planen und ihn schlussendlich auch durchzuführen.
 
 ## Installation
 
@@ -34,10 +29,6 @@ To install and run this project locally, follow these steps:
 2. Navigate to the project directory:
     ```bash
     cd team-projekt-imst23a
-    ```
-3. Install the necessary dependencies:
-    ```bash
-    [Insert installation command, e.g., npm install, pip install -r requirements.txt, etc.]
     ```
 
 ## Usage
@@ -56,12 +47,13 @@ Create a new branch: git checkout -b feature-branch-name
 Make your changes and commit them: git commit -m 'Add new feature'
 Push to the branch: git push origin feature-branch-name
 Submit a pull request.
+
 License
 This project is licensed under the MIT License.
 
 Contact
-For any questions or suggestions, please contact:
--SOSmichi08
--1curafu
+For any questions or suggestions, please contact:\
+-SOSmichi08\
+-1curafu\
 
 Mykhailo Khimich and Karl Erik Zenker
