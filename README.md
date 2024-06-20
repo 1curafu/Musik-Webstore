@@ -40,7 +40,7 @@ To use this project, follow these steps:
 2. Clone the GitHub Repository (Link: https://github.com/1curafu/team-projekt-imst23a) with Visual Studio Code
 3. Press the "Go Live" Button in the bottom right corner
 
-Contributing
+## Contributing
 We welcome contributions! To contribute, follow these steps:
 
 - Fork the repository.
@@ -49,10 +49,10 @@ We welcome contributions! To contribute, follow these steps:
 - Push to the branch: git push origin feature-branch-name
 - Submit a pull request.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Contact
+## Contact
 For any questions or suggestions, please contact:
 - SOSmichi08
 - 1curafu
