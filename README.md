@@ -57,4 +57,4 @@ For any questions or suggestions, please contact:
 - SOSmichi08
 - 1curafu
 
-Mykhailo Khimich and Karl Erik Zenker
+M. Khimich and K. Zenker
